@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 140rem;
+    padding: 0 10rem;
+    margin: 0 auto;
+}
+
+::placeholder {
+    font-size: 1.6rem;
+    padding-left: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 0 5rem;    
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        padding: 0 3rem;    
+    }
+}

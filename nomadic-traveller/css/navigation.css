@@ -1,0 +1,104 @@
+.logo {
+    height: 10rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 3rem 0;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 6rem;
+}
+
+.navigation-nav {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navigation-nav .navigation-item {
+    list-style: none;
+}
+
+.navigation-nav .navigation-link {
+    text-decoration: none;
+    color: #282400;
+}
+
+.search-icon {
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* .active {
+    visibility: visible;
+}
+
+.inactive {
+    visibility: hidden;
+} */
+
+@media only screen and (max-width: 1000px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav-hidden {
+        display: none;
+    }
+    
+    .navigation {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .logo {
+        height: 6rem;
+    }
+
+    .nav-bar {
+        text-align: center;
+        display: block;
+        padding: 3rem 0;
+    }
+
+    .navigation-links {
+        background-color: #FFF59C;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 60%);
+        z-index: 1000;
+    }
+
+    .navigation-nav {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    .navigation-nav li:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
